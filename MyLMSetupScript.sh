@@ -44,6 +44,9 @@ sudo apt install dconf-editor
 printf "\nInstalling GIMP...\n"
 sudo apt install gimp
 
+printf "\nInstalling WhatsApp (Electron)...\n"
+sudo apt install whatsapp-desktop
+
 printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
 sudo apt install bleachbit
 sudo apt install stacer
