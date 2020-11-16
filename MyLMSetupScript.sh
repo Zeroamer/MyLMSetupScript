@@ -102,6 +102,19 @@ git clone https://github.com/vinceliuice/vimix-gtk-themes ./resources/vimix-gtk-
 chmod +x ./resources/vimix-gtk-themes/./install.sh
 sudo ./resources/vimix-gtk-themes/./install.sh
 
+printf "\n\nInstalling zsh and configuring oh-my-zsh...\n"
+sudo apt install zsh
+printf "\n Setting zsh as default shell...\n"
+read -p "What is your username?: " $username
+printf "\nSwitching shell to zsh...\n"
+chsh /usr/bin/zsh $username
+printf "\nInstalling oh-my-zsh...\n"
+sh ./resources/oh-my-zsh/install.sh
+
+printf "\nInstalling powerlevel10k theme for oh-my-zsh...\n"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+printf "\n\nTo set zsh theme to p10k, edit the ~/.zshrc file and make ZSH_THEME=powerlevel10k/powerlevel10k\n"
+
 printf "\nAdding Windows 2000 startup sound to options...\n"
 sudo mv ./resources/Windows2000Startup/win2k-startup.ogg /usr/share/mint-artwork/sounds/win2k-startup.ogg
 
