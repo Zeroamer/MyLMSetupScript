@@ -47,6 +47,9 @@ sudo apt install gimp
 printf "\nInstalling WhatsApp (Electron)...\n"
 sudo apt install whatsapp-desktop
 
+printf "\nInstalling qBitTorrent...\n"
+sudo apt install qbittorrent
+
 printf "\nInstalling FFmpeg...\n"
 sudo apt install ffmpeg
 
