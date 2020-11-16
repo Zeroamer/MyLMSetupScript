@@ -47,9 +47,6 @@ sudo apt install gimp
 printf "\nInstalling WhatsApp (Electron)...\n"
 sudo apt install whatsapp-desktop
 
-printf "\nInstalling qBitTorrent...\n"
-sudo apt install qbittorrent
-
 printf "\nInstalling FFmpeg...\n"
 sudo apt install ffmpeg
 
@@ -59,6 +56,10 @@ sudo apt install youtube-dl
 printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
 sudo apt install bleachbit
 sudo apt install stacer
+
+printf "\nInstalling qBitTorrent...\n"
+ppa:qbittorrent-team/qbittorrent-stable
+sudo apt update && sudo apt install qbittorrent
 
 printf "\nInstalling Stremio...\n"
 sudo apt install stremio
@@ -108,3 +109,8 @@ sudo unzip ./resources/Cursors/VimixCursors.tar.xz /usr/share/icons/
 sudo unzip ./resources/Cursors/VolantesCursors.tar.gz /usr/share/icons/
 sudo unzip ./resources/Cursors/WinConceptOSCursors.tar.gz /usr/share/icons/
 sudo unzip ./resources/Cursors/WinSurDarkCursors.tar.gz /usr/share/icons/
+
+
+printf "\n\n\nCleaning up..."
+sudo apt autoclean && sudo apt clean
+sudo apt remove && sudo apt autoremove
