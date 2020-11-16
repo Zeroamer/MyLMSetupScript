@@ -81,7 +81,7 @@ sudo touch /usr/share/applications/popcorntime.desktop
 sudo su -c 'echo "[Desktop Entry]" >> /usr/share/applications/popcorntime.desktop'
 sudo su -c 'echo "Version = 1.0" >> /usr/share/applications/popcorntime.desktop'
 sudo su -c 'echo "Type = Application" >> /usr/share/applications/popcorntime.desktop'
-sudo su -c'echo "Terminal = false" >> /usr/share/applications/popcorntime.desktop'
+sudo su -c 'echo "Terminal = false" >> /usr/share/applications/popcorntime.desktop'
 sudo su -c 'echo "Name = Popcorn Time" >> /usr/share/applications/popcorntime.desktop'
 sudo su -c 'echo "Exec = /usr/bin/Popcorn-Time" >> /usr/share/applications/popcorntime.desktop'
 sudo su -c 'echo "Icon = /opt/popcorntime/popcorn.png" >> /usr/share/applications/popcorntime.desktop'
