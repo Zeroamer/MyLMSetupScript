@@ -53,6 +53,11 @@ sudo apt install ffmpeg
 printf "\nInstalling youtube-dl...\n"
 sudo apt install youtube-dl
 
+printf "\nInstalling Download Managers (Aria2, uGet)...\n"
+sudo apt install aria2
+sudo add-apt-repository ppa:plushuang-tw/uget-stable
+sudo apt update && sudo apt install uget
+
 printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
 sudo apt install bleachbit
 sudo apt install stacer
