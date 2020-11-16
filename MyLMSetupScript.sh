@@ -47,6 +47,12 @@ sudo apt install gimp
 printf "\nInstalling WhatsApp (Electron)...\n"
 sudo apt install whatsapp-desktop
 
+printf "\nInstalling FFmpeg...\n"
+sudo apt install ffmpeg
+
+printf "\nInstalling youtube-dl...\n"
+sudo apt install youtube-dl
+
 printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
 sudo apt install bleachbit
 sudo apt install stacer
