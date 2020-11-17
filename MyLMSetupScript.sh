@@ -20,9 +20,6 @@ sudo apt update && sudo apt install vivaldi-snapshot
 printf "\nInstalling PeaZip...\n"
 sudo apt install peazip
 
-printf "\nInstalling Send Anywhere...\n"
-sudo apt install sendanywhere
-
 printf "\nInstalling OBS Studio...\n"
 sudo apt install obs-studio
 
