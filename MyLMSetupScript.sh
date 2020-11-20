@@ -50,6 +50,9 @@ sudo apt install ffmpeg
 printf "\nInstalling youtube-dl...\n"
 sudo apt install youtube-dl
 
+printf "\nInstalling Minecraft Launcher...\n"
+sudo apt install minecraft-launcher
+
 printf "\nInstalling Download Managers (Aria2, uGet)...\n"
 sudo apt install aria2
 sudo add-apt-repository ppa:plushuang-tw/uget-stable
@@ -69,6 +72,9 @@ sudo dpkg -i ./resources/StremioFix/libx264-152_0.152.2854+gite9a5903-2_amd64.de
 
 printf "\nInstalling Discord from Flatpak...\n"
 sudo flatpak install discord
+
+printf "\nInstalling TLauncher from Flatpak...\n"
+sudo flatpak install tlauncher
 
 printf "\nInstalling Master PDF Editor...\n"
 sudo dpkg -i ./resources/MasterPDFEditor/master-pdf-editor-5.6.49-qt5.x86_64.deb
