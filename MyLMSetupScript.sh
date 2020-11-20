@@ -125,6 +125,9 @@ sudo unzip ./resources/Cursors/VolantesCursors.tar.gz /usr/share/icons/
 sudo unzip ./resources/Cursors/WinConceptOSCursors.tar.gz /usr/share/icons/
 sudo unzip ./resources/Cursors/WinSurDarkCursors.tar.gz /usr/share/icons/
 
+printf "\nAdding additional wallpapers...\n"
+sudo mkdir /usr/share/backgrounds/custom
+sudo mv ./resources/Wallpapers/* /usr/share/backgrounds/custom
 
 printf "\n\n\nCleaning up..."
 sudo apt autoclean && sudo apt clean
