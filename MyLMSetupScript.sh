@@ -66,7 +66,7 @@ sudo apt install -y bleachbit
 sudo apt install -y stacer
 
 printf "\nInstalling qBitTorrent...\n"
-ppa:qbittorrent-team/qbittorrent-stable
+sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update && sudo apt install -y qbittorrent
 
 printf "\nInstalling Tor Browser Launcher...\n"
