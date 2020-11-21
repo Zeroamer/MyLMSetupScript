@@ -73,10 +73,6 @@ printf "\nInstalling Tor Browser Launcher...\n"
 sudo add-apt-repository -y universe && sudo apt update
 sudo apt install -y tor
 
-printf "\nInstalling Stremio...\n"
-sudo apt install -y stremio
-sudo dpkg -i ./resources/StremioFix/libx264-152_0.152.2854+gite9a5903-2_amd64.deb
-
 printf "\nInstalling Discord from Flatpak...\n"
 sudo flatpak install discord
 
@@ -95,6 +91,10 @@ printf "\nInstalling Simplenote...\n"
 mkdir ./resources/Simplenote/
 wget -c https://github.com/Automattic/simplenote-electron/releases/download/v2.1.0/Simplenote-linux-2.1.0-amd64.deb && mv Simplenote-linux-2.1.0-amd64.deb ./resources/Simplenote/
 sudo dpkg -i ./resources/Simplenote/Simplenote-linux-2.1.0-amd64.deb
+
+printf "\nInstalling Stremio...\n"
+wget https://dl.strem.io/shell-linux/v4.4.116/stremio_4.4.116-1_amd64.deb && mv stremio_4.4.116-1_amd64.deb ./resources/Stremio/stremio_4.4.116-1_amd64.deb
+sudo dpkg -i ./resources/Stremio/stremio_4.4.116-1_amd64.deb && sudo dpkg -i ./resources/StremioFix/libx264-152_0.152.2854+gite9a5903-2_amd64.deb
 
 printf "\nInstalling Popcorn Time...\n"
 sudo apt install -y libcanberra-gtk-module libgconf-2-4
