@@ -65,6 +65,10 @@ printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
 sudo apt install -y bleachbit
 sudo apt install -y stacer
 
+printf "\nInstalling Wine & Winetricks...\n"
+sudo apt install -y wine
+sudo apt install -y winetricks
+
 printf "\nInstalling qBitTorrent...\n"
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update && sudo apt install -y qbittorrent
