@@ -50,6 +50,9 @@ sudo apt install -y whatsapp-desktop
 printf "\nInstalling FFmpeg...\n"
 sudo apt install -y ffmpeg
 
+printf "\nInstalling Handbrake...\n"
+sudo apt install handbrake
+
 printf "\nInstalling youtube-dl...\n"
 sudo apt install -y youtube-dl
 
