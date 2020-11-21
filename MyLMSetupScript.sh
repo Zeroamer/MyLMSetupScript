@@ -50,9 +50,6 @@ sudo apt install -y whatsapp-desktop
 printf "\nInstalling FFmpeg...\n"
 sudo apt install -y ffmpeg
 
-printf "\nInstalling Handbrake...\n"
-sudo apt install handbrake
-
 printf "\nInstalling youtube-dl...\n"
 sudo apt install -y youtube-dl
 
@@ -90,9 +87,15 @@ sudo dpkg -i ./resources/NordVPN/nordvpn-release_1.0.0_all.deb
 sudo apt update
 ./resources/NordVPN/./installation-for-apt.sh
 
+printf "\nInstalling Simplenote...\n"
+mkdir ./resources/Simplenote/
+wget -c https://github.com/Automattic/simplenote-electron/releases/download/v2.1.0/Simplenote-linux-2.1.0-amd64.deb && mv Simplenote-linux-2.1.0-amd64.deb ./resources/Simplenote/
+sudo dpkg -i ./resources/Simplenote/Simplenote-linux-2.1.0-amd64.deb
+
 printf "\nInstalling Popcorn Time...\n"
 sudo apt install -y libcanberra-gtk-module libgconf-2-4
-sudo wget -c https://get.popcorntime.app/repo/build/Popcorn-Time-0.4.4-linux64.zip && sudo mv Popcorn-Time-0.4.4-linux64.zip ./resources/PopcornTime/
+mkdir ./resources/PopcornTime
+wget -c https://get.popcorntime.app/repo/build/Popcorn-Time-0.4.4-linux64.zip && mv Popcorn-Time-0.4.4-linux64.zip ./resources/PopcornTime/
 sudo mkdir /opt/popcorntime && sudo unzip ./resources/PopcornTime/Popcorn-Time-0.4.4-linux64.zip -d /opt/popcorntime/
 sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
 sudo touch /usr/share/applications/popcorntime.desktop
