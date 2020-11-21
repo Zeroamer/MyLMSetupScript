@@ -6,71 +6,71 @@ printf "Upgrading system...\n"
 sudo apt update && sudo apt upgrade
 
 printf "\nInstalling dependencies...\n"
-sudo apt install git
-sudo apt install flatpak
-sudo apt install unzip
-sudo apt install openjdk-14-jre openjdk-8-jdk
-sudo apt install openjdk-8-jre openjdk-8-jdk
+sudo apt install -y git
+sudo apt install -y flatpak
+sudo apt install -y -y unzip
+sudo apt install -y openjdk-14-jre openjdk-8-jdk
+sudo apt install -y openjdk-8-jre openjdk-8-jdk
 
 printf "\nInstalling Vivaldi (Snapshot)...\n"
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
 sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-sudo apt update && sudo apt install vivaldi-snapshot
+sudo apt update && sudo apt install -y vivaldi-snapshot
 
 printf "\nInstalling htop...\n"
-sudo apt install htop
+sudo apt install -y htop
 
 printf "\nInstalling PeaZip...\n"
-sudo apt install peazip
+sudo apt install -y peazip
 
 printf "\nInstalling OBS Studio...\n"
-sudo apt install obs-studio
+sudo apt install -y obs-studio
 
 printf "\nInstalling CopyQ...\n"
-sudo apt install copyq
+sudo apt install -y copyq
 
 printf "\nInstalling Flameshot...\n"
-sudo apt install flameshot
+sudo apt install -y flameshot
 
 printf "\nInstalling Steam...\n"
-sudo apt install steam
+sudo apt install -y steam
 
 printf "\nInstalling Grub Customizer...\n"
-sudo apt install grub-customizer
+sudo apt install -y grub-customizer
 
 printf "\nInstalling DConf Editor...\n"
-sudo apt install dconf-editor
+sudo apt install -y dconf-editor
 
 printf "\nInstalling GIMP...\n"
-sudo apt install gimp
+sudo apt install -y gimp
 
 printf "\nInstalling WhatsApp (Electron)...\n"
-sudo apt install whatsapp-desktop
+sudo apt install -y whatsapp-desktop
 
 printf "\nInstalling FFmpeg...\n"
-sudo apt install ffmpeg
+sudo apt install -y ffmpeg
 
 printf "\nInstalling youtube-dl...\n"
-sudo apt install youtube-dl
+sudo apt install -y youtube-dl
 
 printf "\nInstalling Minecraft Launcher...\n"
-sudo apt install minecraft-launcher
+sudo apt install -y minecraft-launcher
 
 printf "\nInstalling Download Managers (Aria2, uGet)...\n"
-sudo apt install aria2
+sudo apt install -y aria2
 sudo add-apt-repository ppa:plushuang-tw/uget-stable
-sudo apt update && sudo apt install uget
+sudo apt update && sudo apt install -y uget
 
 printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
-sudo apt install bleachbit
-sudo apt install stacer
+sudo apt install -y bleachbit
+sudo apt install -y stacer
 
 printf "\nInstalling qBitTorrent...\n"
 ppa:qbittorrent-team/qbittorrent-stable
-sudo apt update && sudo apt install qbittorrent
+sudo apt update && sudo apt install -y qbittorrent
 
 printf "\nInstalling Stremio...\n"
-sudo apt install stremio
+sudo apt install -y stremio
 sudo dpkg -i ./resources/StremioFix/libx264-152_0.152.2854+gite9a5903-2_amd64.deb
 
 printf "\nInstalling Discord from Flatpak...\n"
@@ -88,7 +88,7 @@ sudo apt update
 ./resources/NordVPN/./installation-for-apt.sh
 
 printf "\nInstalling Popcorn Time...\n"
-sudo apt install libcanberra-gtk-module libgconf-2-4
+sudo apt install -y libcanberra-gtk-module libgconf-2-4
 sudo wget -c https://get.popcorntime.app/repo/build/Popcorn-Time-0.4.4-linux64.zip && sudo mv Popcorn-Time-0.4.4-linux64.zip ./resources/PopcornTime/
 sudo mkdir /opt/popcorntime && sudo unzip ./resources/PopcornTime/Popcorn-Time-0.4.4-linux64.zip -d /opt/popcorntime/
 sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
@@ -109,7 +109,7 @@ chmod +x ./resources/vimix-gtk-themes/./install.sh
 sudo ./resources/vimix-gtk-themes/./install.sh
 
 printf "\n\nInstalling zsh and configuring oh-my-zsh...\n"
-sudo apt install zsh
+sudo apt install -y zsh
 printf "\n Setting zsh as default shell...\n"
 read -p "What is your username?: " $username
 printf "\nSwitching shell to zsh...\n"
