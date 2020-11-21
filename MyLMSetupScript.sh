@@ -149,5 +149,6 @@ sudo mkdir /usr/share/backgrounds/custom
 sudo mv ./resources/Wallpapers/* /usr/share/backgrounds/custom
 
 printf "\n\n\nCleaning up..."
+sudo apt update && sudo apt upgrade
 sudo apt autoclean && sudo apt clean
 sudo apt remove && sudo apt autoremove
