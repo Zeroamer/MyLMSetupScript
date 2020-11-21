@@ -14,7 +14,7 @@ sudo apt install -y openjdk-8-jre openjdk-8-jdk
 
 printf "\nInstalling Vivaldi (Snapshot)...\n"
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+sudo add-apt-repository -y 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 sudo apt update && sudo apt install -y vivaldi-snapshot
 
 printf "\nInstalling htop...\n"
@@ -68,6 +68,10 @@ sudo apt install -y stacer
 printf "\nInstalling qBitTorrent...\n"
 ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update && sudo apt install -y qbittorrent
+
+printf "\nInstalling Tor Browser Launcher...\n"
+sudo add-apt-repository -y universe && sudo apt update
+sudo apt install -y tor
 
 printf "\nInstalling Stremio...\n"
 sudo apt install -y stremio
