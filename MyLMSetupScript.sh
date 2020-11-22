@@ -20,6 +20,9 @@ sudo apt update && sudo apt install -y vivaldi-snapshot
 printf "\nInstalling htop...\n"
 sudo apt install -y htop
 
+printf "\nInstalling XDoTool...\n"
+sudo apt install xdotool
+
 printf "\nInstalling PeaZip...\n"
 sudo apt install -y peazip
 
