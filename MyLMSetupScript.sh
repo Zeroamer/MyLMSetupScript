@@ -23,6 +23,10 @@ sudo apt install -y htop
 printf "\nInstalling XDoTool...\n"
 sudo apt install xdotool
 
+printf "\nInstalling TLP...\n"
+sudo apt install tlp
+sudo tlp start
+
 printf "\nInstalling PeaZip...\n"
 sudo apt install -y peazip
 
