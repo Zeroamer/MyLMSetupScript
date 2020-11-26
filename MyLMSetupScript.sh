@@ -147,14 +147,14 @@ printf "\nAdding Windows 2000 startup sound to options...\n"
 sudo mv ./resources/Windows2000Startup/win2k-startup.ogg /usr/share/mint-artwork/sounds/win2k-startup.ogg
 
 printf "\nInstalling additional cursors...\n"
-sudo unzip ./resources/Cursors/BreezeCursors.tar.gz /usr/share/icons/
-sudo unzip ./resources/Cursors/CapitaineCursors.tar.gz /usr/share/icons/
-sudo unzip ./resources/Cursors/QogirCursors.tar.xz /usr/share/icons/
-sudo unzip ./resources/Cursors/SpaceKCursors.tar.gz /usr/share/icons/
-sudo unzip ./resources/Cursors/VimixCursors.tar.xz /usr/share/icons/
-sudo unzip ./resources/Cursors/VolantesCursors.tar.gz /usr/share/icons/
-sudo unzip ./resources/Cursors/WinConceptOSCursors.tar.gz /usr/share/icons/
-sudo unzip ./resources/Cursors/WinSurDarkCursors.tar.gz /usr/share/icons/
+sudo unzip ./resources/Cursors/BreezeCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/CapitaineCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/QogirCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/SpaceKCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/VimixCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/VolantesCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/WinConceptOSCursors.zip -d /usr/share/icons/
+sudo unzip ./resources/Cursors/WinSurDarkCursors.zip -d /usr/share/icons/
 
 printf "\nAdding additional wallpapers...\n"
 sudo mkdir /usr/share/backgrounds/custom
