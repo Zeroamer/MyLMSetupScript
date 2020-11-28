@@ -82,7 +82,7 @@ sudo apt update && sudo apt install -y qbittorrent
 
 printf "\nInstalling Tor Browser Launcher...\n"
 sudo add-apt-repository -y universe && sudo apt update
-sudo apt install -y tor
+sudo apt install -y torbrowser-launcher
 
 printf "\nInstalling Discord from Flatpak...\n"
 sudo flatpak install discord
