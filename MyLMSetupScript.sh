@@ -95,8 +95,8 @@ sudo dpkg -i ./resources/MasterPDFEditor/master-pdf-editor-5.6.49-qt5.x86_64.deb
 
 printf "\nInstalling NordVPN...\n"
 sudo dpkg -i ./resources/NordVPN/nordvpn-release_1.0.0_all.deb
-sudo apt update
-./resources/NordVPN/./installation-for-apt.sh
+sudo apt update && sudo apt install nordvpn
+nordvpn set technology nordlynx
 
 printf "\nInstalling Simplenote...\n"
 mkdir ./resources/Simplenote/
