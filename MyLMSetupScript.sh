@@ -93,6 +93,9 @@ sudo flatpak install tlauncher
 printf "\nInstalling Master PDF Editor...\n"
 sudo dpkg -i ./resources/MasterPDFEditor/master-pdf-editor-5.6.49-qt5.x86_64.deb
 
+printf "\nInstalling ideapad-cm (Ideapad Conservation Mode)\n"
+sudo cp ./resources/ideapad-cm/ideapad-cm /usr/bin/
+
 printf "\nInstalling NordVPN...\n"
 sudo dpkg -i ./resources/NordVPN/nordvpn-release_1.0.0_all.deb
 sudo apt update && sudo apt install nordvpn
