@@ -95,6 +95,7 @@ sudo dpkg -i ./resources/MasterPDFEditor/master-pdf-editor-5.6.49-qt5.x86_64.deb
 
 printf "\nInstalling ideapad-cm (Ideapad Conservation Mode)\n"
 sudo cp ./resources/ideapad-cm/ideapad-cm /usr/bin/
+sudo chmod +x /usr/bin/ideapad-cm
 
 printf "\nInstalling Simplenote...\n"
 mkdir ./resources/Simplenote/
