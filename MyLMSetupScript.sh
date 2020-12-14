@@ -96,11 +96,6 @@ sudo dpkg -i ./resources/MasterPDFEditor/master-pdf-editor-5.6.49-qt5.x86_64.deb
 printf "\nInstalling ideapad-cm (Ideapad Conservation Mode)\n"
 sudo cp ./resources/ideapad-cm/ideapad-cm /usr/bin/
 
-printf "\nInstalling NordVPN...\n"
-sudo dpkg -i ./resources/NordVPN/nordvpn-release_1.0.0_all.deb
-sudo apt update && sudo apt install nordvpn
-nordvpn set technology nordlynx
-
 printf "\nInstalling Simplenote...\n"
 mkdir ./resources/Simplenote/
 wget -c https://github.com/Automattic/simplenote-electron/releases/download/v2.1.0/Simplenote-linux-2.1.0-amd64.deb && mv Simplenote-linux-2.1.0-amd64.deb ./resources/Simplenote/
