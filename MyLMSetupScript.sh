@@ -139,7 +139,6 @@ sh ./resources/oh-my-zsh/install.sh
 
 printf "\nInstalling powerlevel10k theme for oh-my-zsh...\n"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-printf "\n\nTo set zsh theme to p10k, edit the ~/.zshrc file and make ZSH_THEME=powerlevel10k/powerlevel10k\n"
 
 printf "\nCopying custom '.zshrc' file...\n"
 sudo cp ./resources/zshrc/zshrc ~/.zshrc
