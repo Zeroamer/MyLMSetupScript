@@ -63,6 +63,9 @@ sudo apt install -y youtube-dl
 printf "\nInstalling Minecraft Launcher...\n"
 sudo apt install -y minecraft-launcher
 
+printf "\nInstalling Webcamoid...\n"
+sudo apt install -y webcamoid
+
 printf "\nInstalling Download Managers (Aria2, uGet)...\n"
 sudo apt install -y aria2
 sudo add-apt-repository ppa:plushuang-tw/uget-stable
