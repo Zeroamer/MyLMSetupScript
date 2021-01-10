@@ -79,6 +79,10 @@ printf "\nInstalling Wine & Winetricks...\n"
 sudo apt install -y wine
 sudo apt install -y winetricks
 
+printf "\nInstalling WireGuard VPN (and dependencies)...\n"
+sudo apt install -y wireguard
+sudo apt install -y resolvconf
+
 printf "\nInstalling qBitTorrent...\n"
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update && sudo apt install -y qbittorrent
