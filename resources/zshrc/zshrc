@@ -80,13 +80,13 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias systain="sudo apt clean && sudo apt autoclean && sudo apt remove && sudo apt autoremove && echo System cleaned."
-
 alias upgrade="sudo apt update && sudo apt upgrade && echo System upgraded."
-
 alias clrhist="rm ~/.zsh_history && echo History cleared."
-
 alias wg-connect="sudo wg-quick up wg0 && sudo wg && echo "Connected.""
-
 alias wg-disconnect="sudo wg-quick down wg0 && echo "Disonnected.""
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add ~/.local/bin to $PATH
+export PATH="$HOME/.local/bin:$PATH"
