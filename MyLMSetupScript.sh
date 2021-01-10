@@ -1,14 +1,14 @@
 #!/bin/bash
 
-sudo /bin/false
-
-printf "Upgrading system...\n"
+sudo printf "Upgrading system...\n"
 sudo apt update && sudo apt upgrade
 
 printf "\nInstalling dependencies...\n"
 sudo apt install -y git
 sudo apt install -y flatpak
-sudo apt install -y -y unzip
+sudo apt install -y unzip
+sudo apt install -y python
+sudo apt install -y python3-pip
 sudo apt install -y openjdk-14-jre openjdk-8-jdk
 sudo apt install -y openjdk-8-jre openjdk-8-jdk
 
@@ -58,7 +58,7 @@ printf "\nInstalling FFmpeg...\n"
 sudo apt install -y ffmpeg
 
 printf "\nInstalling youtube-dl...\n"
-sudo apt install -y youtube-dl
+pip3 install -y youtube-dl
 
 printf "\nInstalling Minecraft Launcher...\n"
 sudo apt install -y minecraft-launcher
