@@ -27,9 +27,6 @@ printf "\nInstalling TLP...\n"
 sudo apt install -y tlp
 sudo tlp start
 
-printf "\nInstalling PeaZip...\n"
-sudo apt install -y peazip
-
 printf "\nInstalling OBS Studio...\n"
 sudo apt install -y obs-studio
 
@@ -103,6 +100,9 @@ sudo flatpak override us.Zoom.zoom --filesystem=~/Documents/Zoom
 
 printf "\nInstalling Telegram (Flatpak)...\n"
 sudo flatpak install telegram
+
+printf "\nInstalling PeaZip (Flatpak)...\n"
+sudo flatpak install peazip
 
 printf "\nInstalling Master PDF Editor...\n"
 sudo dpkg -i ./resources/MasterPDFEditor/master-pdf-editor-5.6.49-qt5.x86_64.deb
