@@ -88,9 +88,6 @@ sudo apt install -y torbrowser-launcher
 printf "\nInstalling Discord (Flatpak)...\n"
 sudo flatpak install discord
 
-printf "\nInstalling TLauncher (Flatpak)...\n"
-sudo flatpak install tlauncher
-
 printf "\nInstalling Zoom (Flatpak)...\n"
 sudo flatpak install zoom
 sudo flatpak override us.Zoom.zoom --filesystem=~/Documents/Zoom
