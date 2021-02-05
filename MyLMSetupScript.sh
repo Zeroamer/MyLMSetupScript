@@ -55,7 +55,7 @@ printf "\nInstalling FFmpeg...\n"
 sudo apt install -y ffmpeg
 
 printf "\nInstalling youtube-dl...\n"
-pip3 install -y youtube-dl
+pip3 install youtube-dl
 
 printf "\nInstalling Minecraft Launcher...\n"
 sudo apt install -y minecraft-launcher
@@ -65,7 +65,7 @@ sudo apt install -y webcamoid
 
 printf "\nInstalling Download Managers (Aria2, uGet)...\n"
 sudo apt install -y aria2
-sudo add-apt-repository ppa:plushuang-tw/uget-stable
+sudo add-apt-repository ppa:uget-team/ppa
 sudo apt update && sudo apt install -y uget
 
 printf "\nInstalling System Maintenance Apps (BleachBit, Stacer)...\n"
