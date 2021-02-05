@@ -48,9 +48,6 @@ sudo apt install -y dconf-editor
 printf "\nInstalling GIMP...\n"
 sudo apt install -y gimp
 
-printf "\nInstalling WhatsApp (Electron)...\n"
-sudo apt install -y whatsapp-desktop
-
 printf "\nInstalling FFmpeg...\n"
 sudo apt install -y ffmpeg
 
