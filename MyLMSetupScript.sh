@@ -109,8 +109,8 @@ sudo dpkg -i ./resources/Simplenote/Simplenote-linux-2.1.0-amd64.deb
 
 printf "\nInstalling Stremio...\n"
 mkdir ./resources/Stremio
-wget https://dl.strem.io/shell-linux/v4.4.120/stremio_4.4.120-1_amd64.deb && mv stremio_4.4.120-1_amd64.deb ./resources/Stremio/stremio_4.4.120-1_amd64.deb
-sudo dpkg -i ./resources/Stremio/stremio_4.4.120-1_amd64.deb && sudo dpkg -i ./resources/StremioFix/libx264-152_0.152.2854+gite9a5903-2_amd64.deb
+wget https://dl.strem.io/shell-linux/v4.4.137/stremio_4.4.137-1_amd64.deb && mv stremio_4.4.137-1_amd64.deb ./resources/Stremio/stremio_4.4.137-1_amd64.deb
+sudo dpkg -i ./resources/Stremio/stremio_4.4.137-1_amd64.deb && sudo dpkg -i ./resources/StremioFix/libx264-152_0.152.2854+gite9a5903-2_amd64.deb
 
 printf "\nInstalling Popcorn Time...\n"
 sudo apt install -y libcanberra-gtk-module libgconf-2-4
